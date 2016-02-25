@@ -1,0 +1,15 @@
+{
+  "books": [
+    { "title": "to kill a mocking bird",
+    "author": "harper lee",
+    "genre": "fiction"
+  }, {
+    "title": "robots",
+    "author": "hidey cloome",
+    "genre": "non fiction"
+  }, {
+    "title": "I am a birth bird",
+    "author": "howard",
+    "genre": "fiction"
+  }]
+}
