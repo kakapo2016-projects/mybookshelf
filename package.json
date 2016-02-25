@@ -1,0 +1,32 @@
+{
+  "name": "mybookshelf",
+  "version": "1.0.0",
+  "description": "A basic app that organises our bookshelf",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakapo2016-projects/mybookshelf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakapo2016-projects/mybookshelf/issues"
+  },
+  "homepage": "https://github.com/kakapo2016-projects/mybookshelf#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "handlebars": "^4.0.5",
+    "superagent": "^1.7.2"
+  },
+  "devDependencies": {
+    "supertest": "^1.2.0",
+    "tape": "^4.4.0",
+    "watchify": "^3.7.0"
+  }
+}
