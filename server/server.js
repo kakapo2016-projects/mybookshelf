@@ -21,6 +21,7 @@ server.use(express.static(path.join(__dirname, '../client')))
 
 server.get('/', function (req, res) {
   fs.readFile(dataPath, 'utf8', function (err, data) {
+    console.log('query', req.query)
       var books = JSON.parse(data)
       console.log('books', books)
       console.log('viewpath', viewPath)
