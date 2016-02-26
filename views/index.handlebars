@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script type="text/javascript" type="text/js" src="bundle.js"></script>
+    <meta charset="utf-8">
+    <title>My Bookshelf</title>
+  </head>
+  <body>
+    <table>
+      <tr><th>Unread</th><th>Read</th></tr> {{#each books}}
+      <tr>
+        <td>{{this.title}} - {{this.author}} ({{this.genre}})</td>
+  {{/each}}
+</body>
+</html>
