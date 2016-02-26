@@ -20,15 +20,34 @@ server.use(express.static(path.join(__dirname, '../client')))
 // routes
 
 server.get('/', function (req, res) {
+  console.log("get received on / ")
   fs.readFile(dataPath, 'utf8', function (err, data) {
-    console.log('query', req.query)
-      var books = JSON.parse(data)
-      console.log('books', books)
-      console.log('viewpath', viewPath)
+    var books = JSON.parse(data)
       res.render('home', {books: books})
   })
         // res.send("hello world")
 })
+
+server.post('/', function (req, res) {
+  console.log('received post req')
+  console.log("Body: ", req.body)
+  console.log("Query: ", req.query)
+  var newBook = req.body
+  fs.readFile(dataPath, 'utf8', function (err, data) {
+    if (err) return console.log("shit!", err)
+      var newData = JSON.parse(data)
+    newData.books.push(newBook)
+    console.log("book", newData)
+   // fs.writeFile(dataPath, newData, function(err, res) {
+    // console.log(res)
+   // })
+
+  })
+
+  })
+
+
+
 
 server.get('/books', function (req, res) {
   fs.readFile(dataPath, 'utf8', function (err, data) {
@@ -36,6 +55,8 @@ server.get('/books', function (req, res) {
       res.send("in /books")
   })
 })
+
+
 
 server.get('/books/read', function (req, res) {
   fs.readFile(dataPath,  'utf8', function (err, data) {

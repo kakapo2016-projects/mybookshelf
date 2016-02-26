@@ -28,6 +28,7 @@
     "superagent": "^1.7.2"
   },
   "devDependencies": {
+    "nodemon": "^1.9.1",
     "supertest": "^1.2.0",
     "tape": "^4.4.0",
     "watchify": "^3.7.0"
