@@ -1,0 +1,17 @@
+<h1>My Bookshelf
+<br><br>
+<table>
+  {{#each books.books}}
+  <tr><td>{{this.title}} - {{this.author}} ({{this.genre}})</td></tr>
+  {{/each}}
+</table>
+<br><br>
+<form method="post">
+  <label for="title">title:</label>
+  <input type="text" name="title"><br>
+  <label for="author">author:</label>
+  <input type="text" name="author"><br>
+  <label for="genre">genre:</label>
+  <input type="text" name="genre"><br>
+  <button>add book</button>
+</form>

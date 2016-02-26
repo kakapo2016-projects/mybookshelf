@@ -21,11 +21,14 @@
   },
   "homepage": "https://github.com/kakapo2016-projects/mybookshelf#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.5",
     "superagent": "^1.7.2"
   },
   "devDependencies": {
+    "nodemon": "^1.9.1",
     "supertest": "^1.2.0",
     "tape": "^4.4.0",
     "watchify": "^3.7.0"
