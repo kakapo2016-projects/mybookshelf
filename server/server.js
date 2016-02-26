@@ -38,16 +38,11 @@ server.post('/', function (req, res) {
       var newData = JSON.parse(data)
     newData.books.push(newBook)
     console.log("book", newData)
-   // fs.writeFile(dataPath, newData, function(err, res) {
-    // console.log(res)
-   // })
-
+   fs.writeFile(dataPath, JSON.stringify(newData), function(err, res) {
+    console.log(res)
+   })
+    })
   })
-
-  })
-
-
-
 
 server.get('/books', function (req, res) {
   fs.readFile(dataPath, 'utf8', function (err, data) {
@@ -55,8 +50,6 @@ server.get('/books', function (req, res) {
       res.send("in /books")
   })
 })
-
-
 
 server.get('/books/read', function (req, res) {
   fs.readFile(dataPath,  'utf8', function (err, data) {

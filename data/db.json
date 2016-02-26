@@ -1,15 +1,1 @@
-{
-  "books": [
-    { "title": "to kill a mocking bird",
-    "author": "harper lee",
-    "genre": "fiction"
-  }, {
-    "title": "triceratops",
-    "author": "andi",
-    "genre": "non fiction"
-  }, {
-    "title": "howard's aventure",
-    "author": "howard",
-    "genre": "semi fiction"
-  }]
-}
+{"books":[{"title":"to kill a mocking bird","author":"harper lee","genre":"fiction"},{"title":"triceratops","author":"andi","genre":"non fiction"},{"title":"howard's aventure","author":"howard","genre":"semi fiction"},{"title":"React Base Fiddle (JSX)","author":"richard joe","genre":"Best"}]}
